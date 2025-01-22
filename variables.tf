@@ -180,7 +180,7 @@ variable "auth_token" {
 
 variable "auth_token_update_strategy" {
   type        = string
-  description = "Strategy to use when updating the auth_token. Valid values are `SET`, `ROTATE`, and `DELETE`."
+  description = "Strategy to use when updating the auth_token. Valid values are `SET`, `ROTATE`, and `DELETE` if transit_encryption_enabled is set to true else set as `null`."
 }
 
 variable "kms_key_id" {
